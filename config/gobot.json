@@ -1,0 +1,40 @@
+{
+  "chainer": {
+    "in": ["x"],
+    "in_y": ["y"],
+    "pipe": [
+      {
+        "in": ["x"],
+        "config_path": "{CONFIG_PATH}/ner_bert.json",
+        "out": ["slots"]
+      },
+      {
+        "in": ["x"],
+        "config_path": "{CONFIG_PATH}/intent_bert.json",
+        "out": ["y_pred_labels"]
+      },
+      {
+        "in":["slots", "y_pred_labels"],
+        "class_name": "modules.gobot:MyGoBot",
+        "save_path": "{DATA_PATH}/define.json",
+        "load_path": "{DATA_PATH}/define.json",
+        "max_patience_keep_a_session": 3,
+        "max_time_keep_a_session": 600,
+        "out": ["action", "response"]
+      }
+    ],
+    "out": ["action", "response", "slots", "y_pred_labels"]
+  },
+  "metadata": {
+    "variables": {
+	  "BASE_PATH": ".",
+	  "DATA_PATH": "{BASE_PATH}/data/gobot",
+      "CONFIG_PATH": "{BASE_PATH}/config"
+    },
+    "imports": ["modules.gobot"],
+    "requirements": [
+      "{DEEPPAVLOV_PATH}/requirements/tf.txt",
+      "{DEEPPAVLOV_PATH}/requirements/bert_dp.txt"
+    ]
+  }
+}

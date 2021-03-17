@@ -1,0 +1,51 @@
+{
+  "chainer": {
+    "in": ["x"],
+    "in_y": ["y"],
+    "pipe": [
+      {
+        "in": ["x"],
+        "config_path": "{CONFIG_PATH}/kbqa_template_cls.json",                                                                                                                                                     
+        "out": ["templates"]
+      },
+      {
+        "in": ["x"],
+        "config_path": "{CONFIG_PATH}/kbqa_ner.json",
+        "out": ["mentions"]
+      },
+      {
+        "in":["mentions"],
+        "class_name": "modules.entity_linking:MyEntityLinking",
+        "save_path": "{DATA_PATH}/mention2entity.txt",
+        "load_path": "{DATA_PATH}/mention2entity.txt",
+        "out": ["entities"]
+      },
+      {
+        "in": ["x"],
+        "config_path": "{CONFIG_PATH}/kbqa_relation_cls.json",
+        "out": ["relations"]
+      },
+      {
+        "in":["templates", "entities", "relations"],
+        "class_name": "modules.query_generate:MyQueryGenerator",
+        "max_entity_num": 3,
+        "max_relation_num": 3,
+        "save_path": "",
+        "out": ["sqls"]
+      }
+    ],
+    "out": ["mentions", "entities", "relations", "templates", "sqls"]
+  },
+  "metadata": {
+    "variables": {
+	  "BASE_PATH": ".",
+	  "DATA_PATH": "{BASE_PATH}/data/kbqa",
+      "CONFIG_PATH": "{BASE_PATH}/config"
+    },
+    "imports": ["modules.query_generate"],
+    "requirements": [
+      "{DEEPPAVLOV_PATH}/requirements/tf.txt",
+      "{DEEPPAVLOV_PATH}/requirements/bert_dp.txt"
+    ]
+  }
+}

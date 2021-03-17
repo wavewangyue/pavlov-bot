@@ -1,0 +1,4 @@
+SELECT Object FROM @Table WHERE Subject=@Ent AND Predicate=@Rel	34147
+SELECT Count(Object) FROM @Table WHERE Subject=@Ent AND Predicate=@Rel	399
+SELECT Object FROM @Table WHERE Subject=@Ent AND (Predicate=@Rel1 OR Predicate=@Rel2)	114
+SELECT Count(Object) FROM @Table WHERE Subject=@Ent AND (Predicate=@Rel1 OR Predicate=@Rel2)	42

@@ -1,0 +1,187 @@
+nohup: ignoring input
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/bert_dp/tokenization.py:125: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:37: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:222: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:222: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:193: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/models/bert/bert_classifier.py:84: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2021-03-04 14:35:59.255285: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-03-04 14:35:59.270032: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2097565000 Hz
+2021-03-04 14:35:59.276250: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562d69f26b60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-03-04 14:35:59.276286: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-03-04 14:35:59.279938: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-03-04 14:35:59.441433: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:35:59.443154: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562d69faa210 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-03-04 14:35:59.443212: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P40, Compute Capability 6.1
+2021-03-04 14:35:59.443478: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:35:59.445058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0d.0
+2021-03-04 14:35:59.445380: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-03-04 14:35:59.447304: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-03-04 14:35:59.449078: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-03-04 14:35:59.449447: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-03-04 14:35:59.451753: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-03-04 14:35:59.453505: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-03-04 14:35:59.458254: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-04 14:35:59.458401: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:35:59.460041: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:35:59.461595: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2021-03-04 14:35:59.461655: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-03-04 14:35:59.464160: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-04 14:35:59.464198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2021-03-04 14:35:59.464213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2021-03-04 14:35:59.464377: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:35:59.466018: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:35:59.467624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21625 MB memory) -> physical GPU (device: 0, name: Tesla P40, pci bus id: 0000:00:0d.0, compute capability: 6.1)
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/models/bert/bert_classifier.py:161: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/bert_dp/modeling.py:178: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/bert_dp/modeling.py:418: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/bert_dp/modeling.py:499: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/bert_dp/modeling.py:366: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/bert_dp/modeling.py:680: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/bert_dp/modeling.py:283: The name tf.erf is deprecated. Please use tf.math.erf instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:234: The name tf.train.AdadeltaOptimizer is deprecated. Please use tf.compat.v1.train.AdadeltaOptimizer instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:127: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:127: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/models/bert/bert_classifier.py:92: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/models/bert/bert_classifier.py:97: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2021-03-04 14:36:17.673 INFO in 'deeppavlov.core.models.tf_model'['tf_model'] at line 51: [loading model from /export/scratch/wangyue/pavlov-bot/ckpt/paraphraser_bert/model]
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:54: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /export/scratch/wangyue/tmp/jieba.cache
+Dump cache file failed.
+Traceback (most recent call last):
+  File "/export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/jieba/__init__.py", line 150, in initialize
+    fd, fpath = tempfile.mkstemp(dir=tmpdir)
+  File "/export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/tempfile.py", line 340, in mkstemp
+    return _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+  File "/export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/tempfile.py", line 258, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+FileNotFoundError: [Errno 2] No such file or directory: '/export/scratch/wangyue/tmp/tmp3xcx1ox8'
+Loading model cost 0.810 seconds.
+Prefix dict has been built successfully.
+build bm25 model...
+build bm25 model with corpus: 17827
+2021-03-04 14:37:08.880 INFO in 'deeppavlov.core.data.simple_vocab'['simple_vocab'] at line 115: [loading vocabulary from /export/scratch/wangyue/pavlov-bot/data/ner/tag.dict]
+2021-03-04 14:37:08.891957: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:08.893552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0d.0
+2021-03-04 14:37:08.893604: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-03-04 14:37:08.893630: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-03-04 14:37:08.893653: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-03-04 14:37:08.893676: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-03-04 14:37:08.893697: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-03-04 14:37:08.893719: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-03-04 14:37:08.893749: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-04 14:37:08.893843: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:08.895384: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:08.896824: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2021-03-04 14:37:08.896865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-04 14:37:08.896877: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2021-03-04 14:37:08.896886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2021-03-04 14:37:08.897013: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:08.898555: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:08.900023: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21625 MB memory) -> physical GPU (device: 0, name: Tesla P40, pci bus id: 0000:00:0d.0, compute capability: 6.1)
+WARNING:tensorflow:Variable *= will be deprecated. Use `var.assign(var * other)` if you want assignment to the variable value or `x = x * y` if you want a new python Tensor object.
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/models/bert/bert_sequence_tagger.py:75: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/contrib/crf/python/ops/crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/core/models/tf_model.py:94: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/python/training/moving_averages.py:433: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /export/scratch/wangyue/miniconda3/envs/py37/lib/python3.7/site-packages/deeppavlov/models/bert/bert_sequence_tagger.py:671: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2021-03-04 14:37:34.4 INFO in 'deeppavlov.core.models.tf_model'['tf_model'] at line 51: [loading model from /export/scratch/wangyue/pavlov-bot/ckpt/ner/model]
+2021-03-04 14:37:37.553 WARNING in 'deeppavlov.core.models.serializable'['serializable'] at line 52: No load path is set for MySlotFilling!
+2021-03-04 14:37:37.619 INFO in 'deeppavlov.core.data.simple_vocab'['simple_vocab'] at line 115: [loading vocabulary from /export/scratch/wangyue/pavlov-bot/data/intent/classes.dict]
+2021-03-04 14:37:37.628062: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:37.629713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0d.0
+2021-03-04 14:37:37.629784: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-03-04 14:37:37.629811: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-03-04 14:37:37.629834: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-03-04 14:37:37.629857: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-03-04 14:37:37.629879: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-03-04 14:37:37.629901: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-03-04 14:37:37.629924: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-04 14:37:37.630015: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:37.631564: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:37.633028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2021-03-04 14:37:37.633070: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-04 14:37:37.633082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2021-03-04 14:37:37.633091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2021-03-04 14:37:37.633237: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:37.634770: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-04 14:37:37.636247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 21625 MB memory) -> physical GPU (device: 0, name: Tesla P40, pci bus id: 0000:00:0d.0, compute capability: 6.1)
+2021-03-04 14:37:53.858 INFO in 'deeppavlov.core.models.tf_model'['tf_model'] at line 51: [loading model from /export/scratch/wangyue/pavlov-bot/ckpt/intent/model]
+ * Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2021-03-04 14:37:55,531 - _internal.py(line:113) - [INFO]  * Running on http://0.0.0.0:8001/ (Press CTRL+C to quit)
+2021-03-04 14:39:59,653 - server.py(line:24) - [INFO] new request: 我要查北京的天气
+2021-03-04 14:40:01.417258: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-03-04 14:40:02,739 - server.py(line:42) - [INFO] send response: {"result": {"action": "act_weather_req_dt", "response": "请问您想查询北京哪一天的天气呢？", "slot": {"location": "北京"}, "intent": "Weather"}, "status": 1, "msg": "success"}
+2021-03-04 14:40:02,739 - _internal.py(line:113) - [INFO] 11.70.128.84 - - [04/Mar/2021 14:40:02] "[37mGET /talk?query=我要查北京的天气 HTTP/1.1[0m" 200 -
+2021-03-04 14:40:10,437 - server.py(line:24) - [INFO] new request: 我要查明天的天气
+2021-03-04 14:40:10,596 - server.py(line:42) - [INFO] send response: {"result": {"action": "act_weather_inform", "response": "北京明天天气小雨，白天气温9摄氏度，夜晚气温0摄氏度，风向东风3-4级 5.5~7.9m/s，紫外线强度最弱，降水概率71%。天气阴冷有降水，湿嗒塔的环境让人的心情难以开朗，此时呆在暖和的房子里，可以感受到暖暖的温馨在周围的空气里漾开来。", "slot": {"date": "明天"}, "intent": "Weather"}, "status": 1, "msg": "success"}
+2021-03-04 14:40:10,596 - _internal.py(line:113) - [INFO] 11.70.128.84 - - [04/Mar/2021 14:40:10] "[37mGET /talk?query=我要查明天的天气 HTTP/1.1[0m" 200 -
+2021-03-04 14:40:13,664 - server.py(line:24) - [INFO] new request: 我要查明天的天气
+2021-03-04 14:40:13,740 - server.py(line:42) - [INFO] send response: {"result": {"action": "act_weather_req_loc", "response": "请问您想查询明天哪个地方天气呢？", "slot": {"date": "明天"}, "intent": "Weather"}, "status": 1, "msg": "success"}
+2021-03-04 14:40:13,740 - _internal.py(line:113) - [INFO] 11.70.128.84 - - [04/Mar/2021 14:40:13] "[37mGET /talk?query=我要查明天的天气 HTTP/1.1[0m" 200 -
+2021-03-04 14:40:28,999 - server.py(line:24) - [INFO] new request: 我抑郁症怎么治
+(50, 2)
+2021-03-04 14:40:30,237 - server.py(line:42) - [INFO] send response: {"result": {"action": "act_psycho_faq", "response": "你的情况是怎样的，抑郁是可以治疗的", "slot": {}, "intent": "Psycho"}, "status": 1, "msg": "success"}
+2021-03-04 14:40:30,238 - _internal.py(line:113) - [INFO] 11.70.128.84 - - [04/Mar/2021 14:40:30] "[37mGET /talk?query=我抑郁症怎么治 HTTP/1.1[0m" 200 -
+2021-03-04 14:40:40,329 - server.py(line:24) - [INFO] new request: 你好
+2021-03-04 14:40:40,405 - server.py(line:42) - [INFO] send response: {"result": {"action": "act_chat_faq", "response": "", "slot": {}, "intent": "Chat"}, "status": 1, "msg": "success"}
+2021-03-04 14:40:40,406 - _internal.py(line:113) - [INFO] 11.70.128.84 - - [04/Mar/2021 14:40:40] "[37mGET /talk?query=你好 HTTP/1.1[0m" 200 -
+2021-03-04 14:40:51,387 - server.py(line:24) - [INFO] new request: 上海的天气
+2021-03-04 14:40:51,551 - server.py(line:42) - [INFO] send response: {"result": {"action": "act_weather_inform", "response": "上海明天天气小雨，白天气温15摄氏度，夜晚气温8摄氏度，风向东风3-4级 5.5~7.9m/s，紫外线强度最弱，降水概率74%。有降水，雨水可能会使心绪无端地挂上轻愁，与其因下雨而无精打采，不如放松心情，好好欣赏一下雨景。你会发现雨中的世界是那般洁净温和、清新葱郁。", "slot": {"location": "上海"}, "intent": "Weather"}, "status": 1, "msg": "success"}
+2021-03-04 14:40:51,552 - _internal.py(line:113) - [INFO] 11.70.128.84 - - [04/Mar/2021 14:40:51] "[37mGET /talk?query=上海的天气 HTTP/1.1[0m" 200 -
+2021-03-04 14:40:54,470 - server.py(line:24) - [INFO] new request: 上海的天气
+2021-03-04 14:40:54,547 - server.py(line:42) - [INFO] send response: {"result": {"action": "act_weather_req_dt", "response": "请问您想查询上海哪一天的天气呢？", "slot": {"location": "上海"}, "intent": "Weather"}, "status": 1, "msg": "success"}
+2021-03-04 14:40:54,547 - _internal.py(line:113) - [INFO] 11.70.128.84 - - [04/Mar/2021 14:40:54] "[37mGET /talk?query=上海的天气 HTTP/1.1[0m" 200 -
+run.sh: line 2: 51662 Terminated              python3 -u server.py
